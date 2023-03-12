@@ -1,0 +1,44 @@
+.App {
+  background-color: rgb(216, 230, 11);
+  text-align: center;
+  padding: auto;
+  height: 100%;
+}
+
+.container{
+  margin: 50px;
+  width: 300px;
+  height: 400px;
+  background-color: rgb(55, 57, 60);
+  color:yellow;
+  justify-content: center;
+}
+time{
+  color: aliceblue;
+  margin-bottom: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  width: 100px;
+}
+.div__time{
+  /* color: aliceblue; */
+  margin-bottom: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  width: 40px;
+  display:inline-block
+}
+.btn{
+  background-color: yellow;
+  color: blue;
+  width: 90px;
+  border-style: none;
+  border-radius: 50%;
+  margin: 5px;
+  /* border-width: 2px; */
+  transition: 500ms;
+}
+.btn:hover{
+  background-color: rgb(200, 37, 25);
+  color: wheat;
+}

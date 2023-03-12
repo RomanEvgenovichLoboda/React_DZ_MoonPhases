@@ -1,0 +1,113 @@
+.wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: silver;
+    background-image: url(../AppCourse/приватБанк\ Лого.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-wrap: wrap;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    color: rgb(62, 94, 29);
+    width: 200px;
+    height: 150px;
+    margin: 50px;
+    position: relative;
+    perspective: 1000px;
+}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.front{
+    background-color: rgb(179, 223, 138);
+}
+.back{
+    background-color: rgb(167, 224, 11);
+    transform: rotateY(180deg);
+}
+.card:hover .front{
+    transform: rotateY(180deg);
+    box-shadow: 0 0 20px #d3ea08;
+}
+.card:hover .back{
+    transform: rotateY(360deg);
+    box-shadow: 0 0 20px #d3ea08;
+}
+h3 span{
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    font-family: 'roboto', sans-serif;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    background-color: rgb(42, 103, 194);
+}
+
+.currency__card{
+    color: blueviolet;
+    width: 200px;
+    height: 150px;
+    background-color:#d3ea08 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #d3ea08;
+    transition: all .6s;
+    margin-top: 15px;
+}
+.currency__card:hover{
+    background-color: #a9bb0c;
+    transform: scale(1.1, 1.1);
+}
+.currency__card span{
+    color: white;
+    letter-spacing: 1px;
+}
+.currency__card div{
+    margin: 5px 0;
+}
